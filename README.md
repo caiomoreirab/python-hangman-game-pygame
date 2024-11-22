@@ -1,85 +1,51 @@
-Jogo da Forca em Python com Pygame
-Este projeto apresenta o clássico jogo da Forca, implementado como parte da disciplina de Algoritmos no curso de Ciências da Computação. O jogo foi desenvolvido utilizando a biblioteca Pygame, com o objetivo de explorar conceitos de programação aplicados ao desenvolvimento de jogos 2D.
-
-📜 Sobre o Projeto
-O jogo da Forca consiste em adivinhar uma palavra oculta. O jogador deve tentar descobrir as letras que compõem a palavra antes de esgotar o número máximo de tentativas. A cada erro, uma parte do boneco é desenhada na forca, e o jogo termina quando:
-
-O jogador completa a palavra (vitória).
-Todas as partes do boneco são desenhadas (derrota).
-Este projeto foi uma oportunidade de aplicar lógica de programação, manipulação gráfica e sonora, bem como reforçar conceitos de estruturação de código e modularidade.
-
-🎮 Funcionalidades
-Interface gráfica interativa com uso de imagens e animações.
-Sistema de contagem de tentativas com representação visual (boneco da forca).
-Escolha aleatória de palavras para cada rodada.
-Feedback sonoro para acertos, erros, vitória e derrota.
-Design intuitivo e responsivo para diferentes tamanhos de tela.
-
-🛠️ Tecnologias Utilizadas
-Python 3.x: Linguagem de programação base.
-Pygame: Biblioteca para criação e manipulação de elementos visuais e sonoros.
-
-🚀 Como Executar o Projeto
-Pré-requisitos
-Instale o Python 3.8 ou superior.
-Instale a biblioteca Pygame executando:
-bash
-Copiar código
-pip install pygame
-Passo a Passo
-Clone este repositório:
-bash
-Copiar código
-git clone https://github.com/seu-usuario/jogo-da-forca-pygame.git
-Navegue até o diretório do projeto:
-bash
-Copiar código
-cd jogo-da-forca-pygame
-Execute o arquivo principal:
-bash
-Copiar código
-python main.py
-
-📷 Imagens do Jogo
-Tela Inicial
-**img
-
-Durante o Jogo
-**img
-
-📚 Como Funciona
-Tela Inicial: Clique no botão "Jogar" para iniciar uma nova partida.
-Gameplay:
-Insira as letras da palavra através do teclado.
-Receba feedback visual e sonoro para cada tentativa.
-Condições de Encerramento:
-Vitória: O jogador adivinha todas as letras corretamente.
-Derrota: O desenho do boneco é completado antes de adivinhar a palavra.
-
-📂 Estrutura do Projeto
-bash
-Copiar código
-jogo-da-forca-pygame/
-│
-├── assets/
-│   ├── images/     # Imagens usadas no jogo
-│   ├── sounds/     # Arquivos de áudio
-│
-├── main.py         # Arquivo principal do jogo
-├── README.md       # Documentação do projeto
-
-📋 Melhorias Futuras
-Adicionar níveis de dificuldade com base na complexidade das palavras.
-Permitir seleção de categorias de palavras.
-Implementar um modo de dois jogadores.
-Melhorar os efeitos sonoros e visuais.
-
-💡 Contribuições
-Contribuições são bem-vindas! Caso tenha alguma ideia, sugestão ou correção, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
-
-🙌 Agradecimentos
-Agradecimento especial à comunidade Python e aos desenvolvedores do Pygame.
-Ao professor da disciplina de Algoritmos por guiar o desenvolvimento deste projeto.
+Jogo da Forca - Documentação do Projeto
+# Jogo da Forca - Documentação do Projeto
+## Descrição do Projeto
+O projeto desenvolvido por Caio Moreira é uma implementação do clássico jogo da forca utilizando
+a biblioteca Pygame em Python, realizado no contexto da disciplina de Algoritmos no curso de
+Ciências da Computação. O jogo consiste em adivinhar uma palavra oculta, onde o jogador tenta
+descobrir as letras que a compõem antes de esgotar o número máximo de tentativas.
+## Funcionalidades
+- O jogador deve tentar adivinhar uma palavra secreta, escolhida aleatoriamente, ao inserir letras
+uma de cada vez.
+- O número de tentativas é limitado, sendo que a cada erro uma parte do corpo do boneco da forca
+é desenhada na tela.
+- O jogo termina quando o jogador adivinha a palavra ou esgota suas tentativas, sendo exibida uma
+mensagem de vitória ou derrota.
+- É possível jogar novamente após o término da partida, reiniciando o jogo com uma nova palavra
+secreta.
+## Tecnologias Utilizadas
+- **Python**: Linguagem de programação utilizada para o desenvolvimento do jogo.
+- **Pygame**: Biblioteca utilizada para a criação da interface gráfica e a lógica do jogo.
+- **Algoritmos**: O jogo aplica conceitos de algoritmos para verificar as tentativas dos jogadores e
+exibir o estado atual do jogo.
+## Como Rodar o Projeto
+### Requisitos
+Para rodar o jogo em sua máquina, é necessário ter o Python e a biblioteca Pygame instalados.
+### Passos para execução:
+1. Instale o Python em sua máquina (caso ainda não tenha). Você pode baixá-lo em
+https://www.python.org/downloads/.
+2. Instale a biblioteca Pygame utilizando o seguinte comando:
+ ```bash
+ pip install pygame
+ ```
+3. Clone o repositório ou baixe os arquivos do projeto em seu computador.
+4. Abra o terminal ou prompt de comando e navegue até o diretório onde os arquivos do projeto
+estão localizados.
+5. Execute o jogo utilizando o comando:
+ ```bash
+ python jogo_da_forca.py
+ ```
+6. Siga as instruções na tela para jogar.
+## Estrutura de Arquivos
+- **jogo_da_forca.py**: Arquivo principal do jogo, contendo a implementação da lógica e interface
+gráfica.
+- **imagens/**: Pasta que contém os recursos visuais utilizados no jogo, como imagens da forca e o
+fundo da tela.
+## Conclusão
+Este projeto visa aplicar conceitos de programação, algoritmos e desenvolvimento de jogos simples
+utilizando Pygame. Ele serve como uma base para expandir com novas funcionalidades, como a
+implementação de diferentes níveis de dificuldade, pontuação e integração com banco de dados
+para salvar os melhores resultados.
+Para mais informações ou contribuições, sinta-se à vontade para explorar o código e abrir *issues*
+ou *pull requests* no repositório do GitHub.
