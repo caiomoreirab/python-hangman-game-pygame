@@ -1,51 +1,81 @@
-Jogo da Forca - Documentação do Projeto
-# Jogo da Forca - Documentação do Projeto
-## Descrição do Projeto
-O projeto desenvolvido por Caio Moreira é uma implementação do clássico jogo da forca utilizando
-a biblioteca Pygame em Python, realizado no contexto da disciplina de Algoritmos no curso de
-Ciências da Computação. O jogo consiste em adivinhar uma palavra oculta, onde o jogador tenta
-descobrir as letras que a compõem antes de esgotar o número máximo de tentativas.
-## Funcionalidades
-- O jogador deve tentar adivinhar uma palavra secreta, escolhida aleatoriamente, ao inserir letras
-uma de cada vez.
-- O número de tentativas é limitado, sendo que a cada erro uma parte do corpo do boneco da forca
-é desenhada na tela.
-- O jogo termina quando o jogador adivinha a palavra ou esgota suas tentativas, sendo exibida uma
-mensagem de vitória ou derrota.
-- É possível jogar novamente após o término da partida, reiniciando o jogo com uma nova palavra
-secreta.
-## Tecnologias Utilizadas
-- **Python**: Linguagem de programação utilizada para o desenvolvimento do jogo.
-- **Pygame**: Biblioteca utilizada para a criação da interface gráfica e a lógica do jogo.
-- **Algoritmos**: O jogo aplica conceitos de algoritmos para verificar as tentativas dos jogadores e
-exibir o estado atual do jogo.
-## Como Rodar o Projeto
-### Requisitos
-Para rodar o jogo em sua máquina, é necessário ter o Python e a biblioteca Pygame instalados.
-### Passos para execução:
-1. Instale o Python em sua máquina (caso ainda não tenha). Você pode baixá-lo em
-https://www.python.org/downloads/.
-2. Instale a biblioteca Pygame utilizando o seguinte comando:
- ```bash
- pip install pygame
- ```
-3. Clone o repositório ou baixe os arquivos do projeto em seu computador.
-4. Abra o terminal ou prompt de comando e navegue até o diretório onde os arquivos do projeto
-estão localizados.
-5. Execute o jogo utilizando o comando:
- ```bash
- python jogo_da_forca.py
- ```
-6. Siga as instruções na tela para jogar.
-## Estrutura de Arquivos
-- **jogo_da_forca.py**: Arquivo principal do jogo, contendo a implementação da lógica e interface
-gráfica.
-- **imagens/**: Pasta que contém os recursos visuais utilizados no jogo, como imagens da forca e o
-fundo da tela.
-## Conclusão
-Este projeto visa aplicar conceitos de programação, algoritmos e desenvolvimento de jogos simples
-utilizando Pygame. Ele serve como uma base para expandir com novas funcionalidades, como a
-implementação de diferentes níveis de dificuldade, pontuação e integração com banco de dados
-para salvar os melhores resultados.
-Para mais informações ou contribuições, sinta-se à vontade para explorar o código e abrir *issues*
-ou *pull requests* no repositório do GitHub.
+# \*\*Jogo da Forca - Implementado com Pygame\*\*
+
+Este projeto implementa o clássico \*\*Jogo da Forca\*\*, utilizando a biblioteca \*\*Pygame\*\* em Python. O objetivo do jogo é adivinhar uma palavra oculta antes que o jogador esgote o número de tentativas e o boneco da forca seja desenhado completamente.
+
+## 🚀 \*\*Funcionalidades\*\*
+- Interface gráfica interativa criada com \*\*Pygame\*\*.
+- Sons de fundo e efeitos sonoros para acertos, erros, vitórias e derrotas.
+- Palavras selecionadas aleatoriamente a partir de uma lista pré-definida.
+- Exibição dinâmica do progresso da palavra e do boneco da forca.
+- Botões interativos para reiniciar o jogo.
+
+## 🛠️ \*\*Tecnologias Utilizadas\*\*
+- \*\*Python\*\* (versão 3.8+)
+- \*\*Pygame\*\* (para interface gráfica e sons)
+- \*\*Random\*\* (para seleção aleatória de palavras)
+
+## 📂 \*\*Estrutura do Projeto\*\*
+\```
+.
+├── main.py                      # Código principal do jogo
+├── fundo_start.jpg              # Imagem de fundo da tela inicial
+├── start.png                    # Botão "Start" para iniciar o jogo
+├── botão_tente_novamente.png    # Botão "Tente Novamente"
+├── botão_acerto.png             # Botão "Acerto" para vitória
+├── fundo_do_game.png            # Imagem de fundo da tela principal do jogo
+├── audio_acerto.mp3             # Efeito sonoro para acerto
+├── audio_erro.mp3               # Efeito sonoro para erro
+├── som_start.mp3                # Efeito sonoro da tela inicial
+├── som_vitoria.mp3              # Efeito sonoro para vitória
+├── audio_derrota.mp3            # Efeito sonoro para derrota
+├── som_de_fundo.mp3             # Música de fundo
+└── README.md                    # Documentação do projeto
+\```
+
+## 🧑‍💻 \*\*Como Executar o Projeto\*\*
+
+### \*\*Pré-requisitos\*\*
+1. Certifique-se de ter o Python 3.8+ instalado.
+2. Instale o Pygame com o comando:
+   \```
+   pip install pygame
+   \```
+
+### \*\*Execução\*\*
+1. Baixe todos os arquivos do projeto e mantenha-os na mesma pasta.
+2. Execute o arquivo principal do jogo:
+   \```
+   python main.py
+   \```
+
+## 📋 \*\*Regras do Jogo\*\*
+- Uma palavra é selecionada aleatoriamente.
+- O jogador tem \*\*6 tentativas\*\* para adivinhar a palavra.
+- Para cada tentativa errada, uma parte do boneco da forca será desenhada.
+- O jogo termina quando o jogador adivinha todas as letras ou esgota as tentativas.
+
+## ⚙️ \*\*Detalhes Técnicos\*\*
+### \*\*Funcionalidades do Código\*\*
+- \*\*Seleção de palavras\*\*: Utiliza a função \`random.choice\` para selecionar uma palavra da lista \`palavras_disponiveis\`.
+- \*\*Interface gráfica\*\*: Usa métodos do Pygame para desenhar textos, imagens e formas geométricas.
+- \*\*Efeitos sonoros\*\*: Inclui sons de acerto, erro, vitória e derrota, utilizando o módulo \`pygame.mixer.Sound\`.
+- \*\*Controle de tentativas\*\*: O número de tentativas restantes controla a exibição do boneco e as condições de derrota.
+
+### \*\*Extensões Possíveis\*\*
+- Adicionar mais palavras à lista \`palavras_disponiveis\`.
+- Criar níveis de dificuldade, variando o número de tentativas ou a complexidade das palavras.
+- Implementar um sistema de pontuação.
+
+## 🎮 \*\*Controles do Jogo\*\*
+- Use o \*\*teclado\*\* para inserir as letras.
+- Clique nos botões interativos com o \*\*mouse\*\* para reiniciar o jogo.
+
+## 📜 \*\*Licença\*\*
+Este projeto foi desenvolvido como parte da disciplina de Algoritmos no curso de Ciências da Computação. Sinta-se à vontade para estudar e melhorar o código.
+
+## 🤝 \*\*Contribuição\*\*
+Contribuições são bem-vindas! Se encontrar problemas ou tiver sugestões de melhoria, envie um \*\*pull request\*\* ou abra uma \*\*issue\*\*.
+
+---
+
+Desenvolvido com 💻 e 🎮 por Caio Moreira 
